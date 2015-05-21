@@ -5,7 +5,7 @@
     xmlns:local="using:StendenRooms">
 
     <Application.Resources>
-        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="Blue" />
+        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="Maroon" />
     </Application.Resources>
 
 </Application>
