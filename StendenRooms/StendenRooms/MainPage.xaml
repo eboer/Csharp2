@@ -9,14 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="600" Margin="20,20,0,0" VerticalAlignment="Top" Width="360">
+        <Grid Name="content" HorizontalAlignment="Left" Height="600" Margin="20,20,0,0" VerticalAlignment="Top" Width="360">
             <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Stenden Rooms" VerticalAlignment="Top" FontSize="80" Width="340" TextAlignment="Center" FontFamily="Bell MT"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,268,0,0" TextWrapping="Wrap" Text="Studentnumber" VerticalAlignment="Top" FontSize="25"/>
+            <TextBox Name="stNumber" HorizontalAlignment="Left" Margin="10,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,355,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="25"/>
-            <Button Content="Register" HorizontalAlignment="Left" Margin="10,542,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Button Content="Login" HorizontalAlignment="Left" Margin="241,542,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <PasswordBox HorizontalAlignment="Left" Margin="10,390,0,0" VerticalAlignment="Top" Width="340"/>
+            <PasswordBox Name="password" HorizontalAlignment="Left" Margin="10,390,0,0" VerticalAlignment="Top" Width="340"/>
+            <Button Name="register" Content="Register" HorizontalAlignment="Left" Margin="10,542,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="login" Content="Login" HorizontalAlignment="Left" Margin="241,542,0,0" VerticalAlignment="Top" FontSize="20"/>
         </Grid>
     </Grid>
 </Page>

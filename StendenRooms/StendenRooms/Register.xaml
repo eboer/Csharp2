@@ -9,19 +9,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="600" Margin="20,20,0,0" VerticalAlignment="Top" Width="360">
-            <TextBox HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
+        <Grid Name="content" HorizontalAlignment="Left" Height="600" Margin="20,20,0,0" VerticalAlignment="Top" Width="360">
+            <TextBlock Name="pageName" HorizontalAlignment="Center" Margin="10,10,0,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" FontSize="40" FontFamily="Bell MT"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontSize="25"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
+            <TextBox Name="name" HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,171,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" FontSize="25"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
+            <TextBox Name="email" HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,268,0,0" TextWrapping="Wrap" Text="Studentnumber" VerticalAlignment="Top" FontSize="25"/>
-            <Button Content="Register" HorizontalAlignment="Center" Margin="241,542,10,0" VerticalAlignment="Top" FontSize="20"/>
-            <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,542,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <TextBox Name="stdNumber" HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,358,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="25"/>
-            <CheckBox Content="Show Password" HorizontalAlignment="Left" Margin="10,437,0,0" VerticalAlignment="Top" Width="340"/>
-            <TextBlock HorizontalAlignment="Center" Margin="10,10,0,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" FontSize="40" FontFamily="Bell MT"/>
-            <PasswordBox HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="340"/>
+            <PasswordBox Name="password" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="340"/>
+            <CheckBox Name="showPass" Content="Show Password" HorizontalAlignment="Left" Margin="10,437,0,0" VerticalAlignment="Top" Width="340"/>
+            <Button Name="register" Content="Register" HorizontalAlignment="Center" Margin="241,542,10,0" VerticalAlignment="Top" FontSize="20"/>
+            <Button Name="cancel" Content="Cancel" HorizontalAlignment="Left" Margin="10,542,0,0" VerticalAlignment="Top" FontSize="20"/>
         </Grid>
     </Grid>
 </Page>
