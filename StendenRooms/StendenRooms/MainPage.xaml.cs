@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -43,6 +44,11 @@ namespace StendenRooms
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (Register));
         }
     }
 }
