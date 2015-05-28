@@ -38,7 +38,7 @@ namespace StendenRooms
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            //Frame.Navigate(typeof());
+            Frame.Navigate(typeof(RoomInfo));
         }
     }
 }
