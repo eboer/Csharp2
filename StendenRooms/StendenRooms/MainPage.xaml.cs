@@ -50,5 +50,10 @@ namespace StendenRooms
         {
             Frame.Navigate(typeof (Register));
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (Overview));
+        }
     }
 }
