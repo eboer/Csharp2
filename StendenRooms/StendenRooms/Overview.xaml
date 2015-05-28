@@ -9,17 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid Name="content" HorizontalAlignment="Left" Height="600" Margin="20,20,0,0" VerticalAlignment="Top" Width="360">
+        <Grid Name="content" Height="auto" Margin="10,10,10,10" Width="auto">
             <TextBlock Name="name" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Erik Boer" VerticalAlignment="Top" FontSize="20" FontFamily="Bell MT"/>
-            <TextBlock Name="stdNumber" HorizontalAlignment="Right" Margin="0,0,-1,0" TextWrapping="Wrap" Text="Studentnumber" VerticalAlignment="Top" FontSize="20" FontFamily="Bell MT"/>
+            <TextBlock Name="stdNumber" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Studentnumber" VerticalAlignment="Top" FontSize="20" FontFamily="Bell MT"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,56,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" FontSize="25"/>
             <DatePicker Name="date" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" Margin="285,56,0,0" TextWrapping="Wrap" Text="Room" VerticalAlignment="Top" FontSize="25"/>
-            <ComboBox Name="room" HorizontalAlignment="Left" Margin="230,77,0,0" VerticalAlignment="Top" Width="120"/>
-            <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="340" FontSize="20" Click="btnSearch_Click"/>
+            <TextBlock HorizontalAlignment="right" Margin="285,56,10,0" TextWrapping="Wrap" Text="Room" VerticalAlignment="Top" FontSize="25"/>
+            <ComboBox Name="room" HorizontalAlignment="right" Margin="230,77,10,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btnSearch" Content="Search" Margin="0,145,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="auto" FontSize="20" Click="btnSearch_Click"/>
         
-        <ScrollViewer HorizontalAlignment="Left" Height="auto" Margin="0,250,0,0" VerticalAlignment="Top" Width="auto">
-            <Grid Name="reserves" Height="280" Width="360">
+        <ScrollViewer Height="280" Margin="0,150,0,0"  Width="auto">
+            <Grid Name="reserves" Height="auto" Width="auto">
                 <StackPanel>
                     <TextBlock FontSize="20">hoi</TextBlock>
                     <TextBlock FontSize="20">hoi</TextBlock>
@@ -32,12 +32,18 @@
                     <TextBlock FontSize="20">hoi</TextBlock>
                     <TextBlock FontSize="20">hoi</TextBlock>
                     <TextBlock FontSize="20">hoi</TextBlock>
-                    <TextBlock FontSize="20">hoi</TextBlock>
-                    <TextBlock FontSize="20">kimberly</TextBlock>
+                        <TextBlock FontSize="20">hoi</TextBlock>
+                        <TextBlock FontSize="20">hoi</TextBlock>
+                        <TextBlock FontSize="20">hoi</TextBlock>
+                        <TextBlock FontSize="20">hoi</TextBlock>
+                        <TextBlock FontSize="20">hoi</TextBlock>
+                        <TextBlock FontSize="20">hoi</TextBlock>
+                        <TextBlock FontSize="20">hoi</TextBlock>
+                        <TextBlock FontSize="20">kimberly</TextBlock>
                 </StackPanel>
             </Grid>
         </ScrollViewer>
-            <Button Name="logout" Content="Logout" HorizontalAlignment="Left" Margin="0,552,0,-9" VerticalAlignment="Top" Width="360" FontSize="20"/>
+            <Button Name="logout" Content="Logout" Margin="10,552,0,0" VerticalAlignment="Bottom" Width="auto" FontSize="20"/>
         </Grid>
     </Grid>
 </Page>
