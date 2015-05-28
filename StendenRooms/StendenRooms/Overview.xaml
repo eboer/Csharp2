@@ -16,7 +16,7 @@
             <DatePicker Name="date" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="285,56,0,0" TextWrapping="Wrap" Text="Room" VerticalAlignment="Top" FontSize="25"/>
             <ComboBox Name="room" HorizontalAlignment="Left" Margin="230,77,0,0" VerticalAlignment="Top" Width="120"/>
-            <Button Name="search" Content="Search" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="340" FontSize="20"/>
+            <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="340" FontSize="20" Click="btnSearch_Click"/>
         
         <ScrollViewer HorizontalAlignment="Left" Height="auto" Margin="0,250,0,0" VerticalAlignment="Top" Width="auto">
             <Grid Name="reserves" Height="280" Width="360">
