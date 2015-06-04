@@ -64,7 +64,7 @@ namespace StendenRooms
             }
             else
             {
-                toastTextElements[0].AppendChild(toastXml.CreateTextNode("Unknown error. Errornumber: " + responseFromDB));
+                toastTextElements[0].AppendChild(toastXml.CreateTextNode("Unknown error. Error: " + responseFromDB));
             }
             IXmlNode toastNode = toastXml.SelectSingleNode("/toast");
             ((XmlElement) toastNode).SetAttribute("duration", "long");
