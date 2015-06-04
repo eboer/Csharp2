@@ -12,16 +12,15 @@
         <Grid HorizontalAlignment="Left" Height="600" Margin="20,20,0,0" VerticalAlignment="Top" Width="360">
             <TextBox x:Name="tbxName" HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontSize="25"/>
-            <TextBox x:Name="tbxEmail" HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
+            <TextBox x:Name="tbxEmail" HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" InputScope="EmailSmtpAddress"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,171,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" FontSize="25"/>
-            <TextBox x:Name="tbxStudentNr" HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
+            <TextBox x:Name="tbxStudentNr" HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" InputScope="Number"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,268,0,0" TextWrapping="Wrap" Text="Studentnumber" VerticalAlignment="Top" FontSize="25"/>
             <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Center" Margin="241,542,10,0" VerticalAlignment="Top" FontSize="20" Click="btnRegister_Click"/>
             <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,542,0,0" VerticalAlignment="Top" FontSize="20"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,358,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="25"/>
-            <CheckBox Content="Show Password" HorizontalAlignment="Left" Margin="10,437,0,0" VerticalAlignment="Top" Width="340"/>
             <TextBlock HorizontalAlignment="Center" Margin="10,10,0,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" FontSize="40" FontFamily="Bell MT"/>
-            <PasswordBox x:Name="tbxPassword" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="340"/>
+            <PasswordBox x:Name="tbxPassword" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="340" IsPasswordRevealButtonEnabled="True"/>
         </Grid>
     </Grid>
 </Page>
