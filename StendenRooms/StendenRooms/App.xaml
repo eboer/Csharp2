@@ -6,6 +6,7 @@
 
     <Application.Resources>
         <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="Maroon" />
+        <SolidColorBrush x:Key="ButtonPressedBackgroundThemeBrush" Color="Maroon" />
     </Application.Resources>
 
 </Application>

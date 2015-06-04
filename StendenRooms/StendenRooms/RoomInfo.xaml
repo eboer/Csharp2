@@ -8,25 +8,31 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <Grid Name="gContent" HorizontalAlignment="Left" Height="600" Margin="20,20,0,0" VerticalAlignment="Top" Width="360">
-            <TextBlock Name="tbName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Erik Boer" VerticalAlignment="Top" FontSize="20" FontFamily="Bell MT"/>
-            <TextBlock Name="tbNumber" HorizontalAlignment="Right" Margin="0,0,-1,0" TextWrapping="Wrap" Text="Studentnumber" VerticalAlignment="Top" FontSize="20" FontFamily="Bell MT"/>
-            <Pivot Margin="0,16,0,0">
-                <PivotItem Header="Time" Margin="0,10,0,-0.5">
-                    <ScrollViewer>
-                        <Grid Name="gTime">
-                            
+        <Grid Name="gContent" HorizontalAlignment="Left" Height="620" Margin="10,10,0,0" VerticalAlignment="Top" Width="380">
+            <TextBlock Name="tbName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Erik Boer" VerticalAlignment="Top" FontSize="20" FontFamily="Book Antiqua"/>
+            <TextBlock Name="tbNumber" HorizontalAlignment="Right" Margin="0,0,-1,0" TextWrapping="Wrap" Text="Studentnumber" VerticalAlignment="Top" FontSize="20" FontFamily="Book Antiqua"/>
+            <Pivot Margin="0,16,0,70">
+                <PivotItem Header="Times" Margin="0,10,0,-0.5">
+                    <ScrollViewer Height="440">
+                        <Grid Name="gTime" Height="auto">
+
                         </Grid>
                     </ScrollViewer>
                 </PivotItem>
-                <PivotItem Header="Facilities" Margin="0,10,0,-0.5">
-                    <ScrollViewer>
-                        <Grid Name="gFacilities">
-                            
+                <PivotItem Header="Extras" Margin="0,10,0,-0.5" >
+                    <ScrollViewer Height="440">
+                        <Grid>
+                            <Grid Name="gFacilities" Height="auto" VerticalAlignment="Top">
+
+                            </Grid>
+                            <Grid Name="gExtra" Height="auto" VerticalAlignment="Bottom">
+
+                            </Grid>
                         </Grid>
                     </ScrollViewer>
                 </PivotItem>
             </Pivot>
+            <Button Content="Reserve" HorizontalAlignment="Left" Margin="10,562,0,0" VerticalAlignment="Top" Width="360" FontSize="20" />
         </Grid>
     </Grid>
 </Page>

@@ -25,6 +25,9 @@ namespace StendenRooms
         public Overview()
         {
             this.InitializeComponent();
+
+            createColomns(reserves, 3);
+            createRows(reserves, 15);
         }
 
         /// <summary>
@@ -40,5 +43,44 @@ namespace StendenRooms
         {
             Frame.Navigate(typeof(RoomInfo));
         }
+
+        private void createColomns(Grid grid, int colomns) {
+            for (int i = 0; i < colomns; i++) {
+                grid.ColumnDefinitions.Add(new ColumnDefinition());
+
+                TextBlock label = new TextBlock();
+                label.FontSize = 20;
+                label.TextAlignment = TextAlignment.Center;
+
+                if (i == 0) label.Text = "Room";
+                if (i == 1) label.Text = "Time";
+                if (i == 2) label.Text = "Extra";
+
+                Grid.SetColumn(label, i);
+                grid.Children.Add(label);
+
+            }
+        }
+
+        private void createRows(Grid grid, int rows)
+        {
+            for (int i = 0; i < rows; i++)
+            {
+                grid.RowDefinitions.Add(new RowDefinition());
+
+                TextBlock label = new TextBlock();
+                label.FontSize = 20;
+                label.TextAlignment = TextAlignment.Center;
+                label.TextWrapping = TextWrapping.Wrap;
+
+                if(i > 0)
+                label.Text = i.ToString();
+
+                Grid.SetRow(label, i);
+                grid.Children.Add(label);
+
+            }
+        }
+        
     }
 }
